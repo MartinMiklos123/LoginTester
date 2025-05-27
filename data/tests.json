@@ -1,0 +1,6 @@
+[
+  { "username": "xmiklos1", "password": "wrong", "expected": "password doesn't match" },
+  { "username": "user", "password": "123", "expected": "password must contain at least 8 characters" },
+  { "username": "in valid", "password": "pass@word", "expected": "username can't include any space" },
+  { "username": "xmiklos1", "password": "password1234_", "expected": "success" }
+]

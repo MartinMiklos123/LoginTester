@@ -1,5 +1,5 @@
 import sys
-from loginAutomationTest import Tester
+from src.loginAutomationTest import Tester
 
 loginTester = Tester()
 
