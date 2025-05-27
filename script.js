@@ -1,5 +1,5 @@
 const validUsers = [
-    {username : "xmiklos1", password: "password1234_"},
+    {username :"xmiklos1", password: "password1234_"},
     {username: "xmiklos12421", password: "password1234_"}
 ];
 

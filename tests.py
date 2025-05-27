@@ -15,7 +15,8 @@ def run_tests():
                       ("user         name", "pass")]
     for user in username_tests:
         username, password = user
-        loginTester.test(username, password).stdout()
+        msg = loginTester.test(username, password).get_message()
+        print(f"testing for [ user: {username}, pass: {password}] with result : [{msg}]")
 
     print("------------------------------------------")
 
@@ -30,7 +31,8 @@ def run_tests():
                       ("admin123", "mypass")]
     for user in password_tests:
         username, password = user
-        loginTester.test(username, password).stdout()
+        msg = loginTester.test(username, password).get_message()
+        print(f"testing for [ user: {username}, pass: {password}] with result : [{msg}]")
 
     print("------------------------------------------")
 
@@ -43,7 +45,8 @@ def run_tests():
 
     for user in user_tests:
         username, password = user
-        loginTester.test(username, password).stdout()
+        msg = loginTester.test(username, password).get_message()
+        print(f"testing for [ user: {username}, pass: {password}] with result : [{msg}]")
 
     print("------------------------------------------")
 
@@ -57,13 +60,16 @@ def run_tests():
 
     for user in user_tests:
         username, password = user
-        loginTester.test(username, password).stdout()
+        msg = loginTester.test(username, password).get_message()
+        print(f"testing for [ user: {username}, pass: {password}] with result : [{msg}]")
+
+    print("----------------------------------------")
+
+    print("running tests from json")
 
     # run tests from json
 
     loginTester.test_from_json("tests.json")
-
-
 
 
 if __name__ == "__main__":
