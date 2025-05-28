@@ -17,6 +17,6 @@ This project demonstrates an automated login testing system using a local HTML l
 ## Usage:
 1) python3 run.py [json file] -> validates usernames and passwords in given json file
 2) python3 run.py [username] [password] -> validates single username and single password
-3) python3 tests/tests_login.py -> runs already prepared tests
+3) python3 tests_login.py -> from tests directory, runs already prepared tests
 
 
